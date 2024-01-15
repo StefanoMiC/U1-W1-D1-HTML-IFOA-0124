@@ -1,0 +1,167 @@
+<!-- il primo tag che ci dev'essere in un file html è: -->
+<!DOCTYPE html>
+<!-- senza questo tag il browser potrebbe interpretare il codice HTML con una modalità QUIRKS (stramba) -->
+
+<html>
+<!-- nel head metteremo elementi di "configurazione" o meta dati riguardanti il nostro applicativo web -->
+
+<head>
+    <!-- i tag meta sono autoconclusivi (non hanno bisogno del tag speculare di chiusura) -->
+    <!-- charset è il tipo di carattere utilizzato -->
+    <meta charset="UTF-8">
+    <!-- scala iniziale per dispositivi mobili -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- descrizione del contenuto della pagina -->
+    <meta description="Il nostro primo sito web">
+    <title>IFOA by EPICODE U1 W1 D1 HTML</title>
+</head>
+<!-- per prettier: ctrl o cmd + shift (maiuscolo) + p -->
+
+<body>
+    <h3>SCORCIATOIE VSCODE</h3>
+    <p><kbd>CTRL o CMD + L</kbd> selezione di linea intera</p>
+    <p><kbd>CTRL o CMD + D</kbd> selezione di elementi comuni nella pagina e creazione di selettori multipli</p>
+    <p><kbd>ALT + Click</kbd> selettori multipli</p>
+    <p><kbd>ALT + Shift + freccia su / giu</kbd> copia interi blocchi o linee di codice</p>
+    <p><kbd>ALT + freccia su / giu</kbd> muove interi blocchi o linee di codice</p>
+
+
+
+    <nav>
+        <ul>
+            <li><a href="./pages/topic-html.html">HTML</a></li>
+            <li><a href="./pages/topic-css.html">CSS</a></li>
+        </ul>
+    </nav>
+    <h1>Titolo principale della pagina</h1>
+    <h2>Titolo secondario</h2>
+    <h3>Titolo terzo</h3>
+    <h4>Titolo quarto</h4>
+    <h5>Titolo quinto</h5>
+    <h6>Titolo sesto</h6>
+    <!-- uno span non impone un ritorno di linea, è fatto per non avere dimensioni proprie diverse da quanto spazio occupa, ed è fatto apposta per non stravolgere il flusso di un testo in un paragrafo -->
+    <p>sottotitolo della pagina <span style="color: red">CAMBIATO</span></p>
+    <!-- mentre un div romperebbe il flusso del testo creando un nuovo blocco! -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <div style="color: red">Rem doloribus sit commodi error minus libero explicabo</div>
+    quam architecto eius excepturi quos deserunt aspernatur ea distinctio quis consectetur consequuntur,
+    perspiciatis dignissimos?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptate, ipsum eum blanditiis, in
+    exercitationem, magnam dignissimos voluptatem debitis iste molestias? Eum, odit consectetur rem reprehenderit
+    magni aperiam delectus autem.
+    </p>
+
+    <!-- altri elementi di tipo linea più comuni sono: -->
+
+    <!-- 
+        span - elemento raggruppatore di tipo linea
+        a - ancore 
+        em - emphasys (corsivo) - la vecchia "i"
+        strong - testo in grasseto - la vecchia "b"
+        u - underline (deprecato - DA NON USARE)
+        s, del - strike through (linea attraverso)
+        ins - crea un underline
+        abbr - per abbreviazioni (da usare in combinazione all'attributo title)
+        mark - evidenziazione
+        code - testo monospaziato, utile per rappresentare codice
+        
+        
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusamus provident deleniti quis. Maxime,
+        nesciunt? Necessitatibus corporis, reprehenderit quae vero, quaerat molestias quis eligendi quod officiis
+        praesentium, eaque libero corrupti?
+        Quae, enim beatae odio, <ins cite="../howtobeawizard.html" datetime="2018-05">quod molestiae perferendis</ins>
+        iste molestias ad ab placeat porro <mark>voluptatem?</mark>
+        <cite>Sit, eveniet natus.</cite>
+        <code>
+            Consequatur laborum iure alias dicta repellendus. Earum est voluptatum sint expedita odio id?
+        </code>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">
+            <abbr title="Hyper Text Markup Language">
+                HTML
+            </abbr>
+        </a>
+    </p>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <ol>
+        <li>CSS ADV</li>
+        <li>BOOTSTRAP</li>
+        <li>SASS</li>
+    </ol>
+
+    <dl>
+        <dt>Unit3</dt>
+        <dd>React</dd>
+        <dd>React ADV</dd>
+        <dd>React Redux</dd>
+    </dl>
+
+
+    <!-- br - tag break - crea un ritorno di linea forzato -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate veritatis aperiam officia veniam vitae cum
+        nobis distinctio voluptatem soluta, rerum quas a, itaque est, voluptatum molestias velit cumque animi quaerat.
+        <br>
+        Consectetur itaque eaque alias, accusantium corporis hic, eligendi officia, libero asperiores minima mollitia
+        veritatis placeat temporibus ab impedit aliquid doloremque quasi ipsam minus labore deserunt molestias dolore
+        distinctio possimus. Accusantium? <br>
+        Adipisci odit quo esse atque ratione optio earum facilis explicabo dolor dolorum quisquam laudantium a fuga
+        consequuntur quidem fugit, aspernatur amet temporibus ea veniam laborum ipsum eos?
+        <br>
+        Accusantium, autem soluta.
+        <br>
+        Labore ipsa aliquid illo consectetur blanditiis fuga voluptates, esse quod quos ullam iste velit eaque
+        perspiciatis pariatur asperiores natus sunt ut omnis vero amet ad reprehenderit ab perferendis? Animi,
+        perferendis.
+    </p>
+    <!-- horizontal ruler - linea orizzontale -->
+    <hr>
+
+    <p>Lo&nbsp;rem ipsum dolor, sit amet consectetur adipisicing elit. Labore magnam tempore eligendi corporis totam eum
+        animi
+        eos cupiditate consequuntur! &nbsp; &nbsp; &nbsp;
+        Ex impedit similique nesciunt, obcaecati id odit distinctio nisi necessitatibus
+        aut!
+        Non, soluta. Quis rem eveniet esse pariatur voluptatum quaerat recusandae unde cum numquam eius eum nemo
+        repudiandae nisi aliquam, earum explicabo aliquid officiis laudantium optio. Numquam consectetur repellat ab
+        assumenda?</p>
+    <p>
+        per creare un paragrafo usa il tag: <code>&lt;p&gt;</code>
+    </p>
+
+    <!-- il tag immagine - img -->
+    <!-- è un ibrido tra blocco e linea: è inline-block -->
+    <!-- src è la fonte dell'immagine: che può essere locale o esterna -->
+    <!-- alt serve a descrivere il contenuto dell'immagine, sia per essere letto da screen reader, oppure nel caso in cui si rompa il collegamento col file.
+    in quel caso verrà visualizzato il testo dell'alt all'interno della pagina -->
+    <div>
+        <img src="./assets/imgs/twotown-royam.jpg" alt="twotown royam ambient pic" width="30%">
+        <span>Twotown Royam</span>
+    </div>
+
+
+    <!-- struttura un po' più specifica per fare quello che abbiamo fatto sopra -->
+    <figure>
+        <img src="./assets/imgs/twotown-royam.jpg" alt="twotown royam ambient pic" width="30%">
+        <figcaption>Twotown Royam</figcaption>
+    </figure>
+
+
+    <img src="https://images.unsplash.com/photo-1704107116952-978a5712566c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="house in the beach" width="30%">
+
+    <ol>
+        <li><img src="./assets/imgs/twotown-royam.jpg" alt="twotown royam ambient pic" width="30%"></li>
+        <li><img src="./assets/imgs/twotown-royam.jpg" alt="twotown royam ambient pic" width="30%"></li>
+        <li><img src="./assets/imgs/twotown-royam.jpg" alt="twotown royam ambient pic" width="30%"></li>
+        <li><img src="./assets/imgs/twotown-royam.jpg" alt="twotown royam ambient pic" width="30%"></li>
+    </ol>
+
+</body>
+
+</html>
